@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Home - Johann Mai Fotografie" />
+    <meta property="og:url" content="https://johannmai.de/" />
+    <meta property="og:site_name" content="Johann Mai Fotografie" />
+    <title>US | Johann Mai Fotografie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bellota Text|Work Sans|Urbanist|Alex Brush"
+      rel="stylesheet"
+    />
+    <script src="myscripts.js"></script>
+    <style>
+      body {
+        background-color: #fef9e7;
+      }
+      footer {
+        background-color: rgba(134, 134, 134, 0.2);
+      }
+      .topnav a,
+      .language a {
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="topnav">
+        <nav>
+          <a
+            href="http://127.0.0.1:5500/index.html"
+            style="display: inline-block; margin-right: 20px"
+          >
+            <h3>Home</h3></a
+          >
+          <a
+            href="about_me.html"
+            style="display: inline-block; margin-right: 20px"
+            ><h3>About us</h3></a
+          >
+          <a
+            href="contact.html"
+            style="display: inline-block; margin-right: 20px"
+            ><h3>Contact</h3></a
+          >
+          <a
+            href="portfolio.html"
+            style="display: inline-block; margin-right: 20px"
+            ><h3>Portfolio</h3></a
+          >
+        </nav>
+      </div>
+      <div class="language">
+        <a
+          href="http://127.0.0.1:5500/index.html"
+          style="display: inline-block"
+        >
+          <h3>EN</h3></a
+        >
+        <a
+          href="http://127.0.0.1:5500/index.html"
+          style="display: inline-block; margin-right: 7px"
+        >
+          <h3>DE</h3></a
+        >
+      </div>
+    </header>
+    <section>
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 150px;
+          margin-left: 10%;
+          margin-right: 10%;
+        "
+      >
+        <div style="flex: 45%">
+          <div>
+            <img src="images/Johann/DSC09992.jpg" alt="Johann" width="100%" />
+          </div>
+        </div>
+        <div style="flex: 35%; padding-left: 5%">
+          <p style="font-size: 70px; font-family: Garamond, serif">
+            Hi friends
+          </p>
+          <div style="font-size: 24px; font-family: Bellota Text">
+            <p>
+              I'm Johann. For years I have been looking for something that light
+              up my creativity and blah blah
+            </p>
+            <p>something new</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          margin-left: 10%;
+          margin-right: 10%;
+          border: none;
+        "
+      >
+        <div style="flex: 45%">
+          <p
+            style="
+              font-size: 24px;
+              font-family: Bellota Text;
+              float: right;
+              padding-right: 10%;
+            "
+          >
+            I am the cute little chicken.
+          </p>
+        </div>
+        <div style="flex: 35%">
+          <img src="images/DSC03468.jpg" alt="Nga" width="100%" />
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <footer>
+    <div
+      style="
+        position: absolute;
+        margin-left: 50%;
+        transform: translate(-50%, 0%);
+        border-bottom: 10px;
+      "
+    >
+      <button onclick="topFunction()" id="top-btn" title="Go to top">
+        Back to top
+      </button>
+    </div>
+
+    <br />
+
+    <div class="wrapper">
+      <!-- Trigger/Open The Modal -->
+      <button
+        onclick="modalFunction()"
+        class="modal-button"
+        href="#daten_modal"
+      >
+        Datenschutzerklärung
+      </button>
+      <!-- Trigger/Open The Modal -->
+      <button onclick="modalFunction()" class="modal-button" href="#imp_modal">
+        Impressum
+      </button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="daten_modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span
+            onclick="closeFuntion()"
+            class="close"
+            data-target="#daten_modal"
+            >&times;</span
+          >
+          <h2>Datenschutzerklärung</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+        <p>Some text in the datenschutz..</p>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="imp_modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span onclick="closeFunction()" class="close" data-target="#imp_modal"
+            >&times;</span
+          >
+          <h2>Impressum</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+        <p>Some text in the Impressum..</p>
+      </div>
+    </div>
+
+    <p
+      style="
+        position: absolute;
+        margin-left: 50%;
+        transform: translate(-50%, 0%);
+        padding-top: 70px;
+        font-family: Work Sans, sans-serif;
+      "
+    >
+      Johann Mai Fotografie | 74223 Flein | johannmai@icloud.com
+    </p>
+  </footer>
+</html>

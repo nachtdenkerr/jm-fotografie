@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Home - Johann Mai Fotografie" />
+    <meta property="og:url" content="https://johannmai.de/" />
+    <meta property="og:site_name" content="Johann Mai Fotografie" />
+    <title>PORTFOLIO | Johann Mai Fotografie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bellota Text|Work Sans|Urbanist|Allura|Amiri"
+      rel="stylesheet"
+    />
+    <script src="myscripts.js"></script>
+    <style>
+      body {
+        background-color: rgb(100, 100, 100);
+      }
+      .topnav {
+        background-color: rgba(58, 58, 58, 0.6);
+      }
+      .container{
+        width: 450px;
+        height: 450px;
+        margin: 30px;
+        display: inline-block;
+        overflow: hidden;
+        align-items: center;
+        font-family: Urbanist;
+        overflow: hidden;
+      }
+      .container .image{
+        transition: 0.6s ease;
+      }
+      .container:hover .image{
+        opacity: 0.4;
+      }
+      .container a {
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        position: relative;
+        z-index: 2;
+        top: 50%;
+        transform: translate(-50%);
+        opacity: 0;
+        transition: 0.6s ease;
+      }
+      .container:hover a {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="topnav">
+        <nav>
+          <a
+            href="http://127.0.0.1:5500/index.html"
+            style="display: inline-block; margin-right: 20px"
+          >
+            <h3>Home</h3></a
+          >
+          <a
+            href="about_me.html"
+            style="display: inline-block; margin-right: 20px"
+            ><h3>About us</h3></a
+          >
+          <a
+            href="contact.html"
+            style="display: inline-block; margin-right: 20px"
+            ><h3>Contact</h3></a
+          >
+          <a
+            href="portfolio.html"
+            style="display: inline-block; margin-right: 20px"
+            ><h3>Portfolio</h3></a
+          >
+        </nav>
+      </div>
+      <div class="language">
+        <a
+          href="http://127.0.0.1:5500/index.html"
+          style="display: inline-block"
+        >
+          <h3>EN</h3></a
+        >
+        <a
+          href="http://127.0.0.1:5500/index.html"
+          style="display: inline-block; margin-right: 7px"
+        >
+          <h3>DE</h3></a
+        >
+      </div>
+    </header>
+    <br />
+      <p style="margin: 0px; margin-top: 100px; text-align: center;font-family: Amiri; font-size: 60px; color: white;">PORTFOLIO</p>
+    
+    <!--
+<div class="container">
+      <img
+        src="images/German-Maria/DSC07280(2).jpg"
+        alt="German-Maria"
+        style="width: 90%; padding-left: 10%"
+      />
+<div
+        style="
+          position: absolute;
+          font-family: Allura;
+          font-size: 50px;
+          color: rgb(60, 60, 60);
+          top: 25%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        "
+      >
+        Because love has no end.
+      </div>
+     -->
+
+    </div>
+    <section class="portfolios" style="width: 100%; text-align: center;">
+      
+      <div class="container">
+        <a href="" >Wedding</a>
+        <img
+          class="image"
+          src="images/German-Maria/DSC06614.jpg"
+          alt=""
+          style="object-fit: cover; height: 100%; margin-left: -200px; z-index: 1;"
+          />
+      </div>
+        
+      <div class="container" >
+        <a href="" >Portrait </a>
+        <img
+          class="image"
+          src="images/portrait/_DSC8532.jpg"
+          alt=""
+          style="object-fit: cover; height: 100%; margin-left: -200px; z-index: 1"/>
+      </div>
+      <div class="container" >
+        <a href="">Kids </a>
+        <img
+          class="image"
+          src="images/kids/DSC08196.jpg"
+          alt=""
+          style="object-fit: cover; height: 100%; margin-left: -280px; z-index: 1"
+        />
+      </div>
+    </section>
+    <!--
+<section>
+      <p>German & Maria</p>
+      <div>
+        
+
+        <img
+          src="images/German-Maria/DSC06702.jpg"
+          alt=""
+          style="height: 600px"
+        />
+
+        <img
+          src="images/German-Maria/DSC08585.jpg"
+          alt=""
+          style="height: 600px"
+        />
+      </div>
+    </section>
+    <section>
+      <p>Alex & Meike</p>
+      <div>
+        <img
+          src="images/meike-alex/DSC02898.jpg"
+          alt=""
+          style="height: 600px"
+        />
+        <img
+          src="images/meike-alex/DSC02937.jpg"
+          alt=""
+          style="height: 600px"
+        />
+        <img
+          src="images/meike-alex/DSC03149.jpg"
+          alt=""
+          style="height: 600px"
+        />
+      </div>
+    </section>
+    -->
+  </body>
+  <footer>
+    <div
+      style="
+        position: absolute;
+        margin-left: 50%;
+        transform: translate(-50%, 0%);
+        border-bottom: 10px;
+      "
+    >
+      <button onclick="topFunction()" id="top-btn" title="Go to top">
+        Back to top
+      </button>
+    </div>
+
+    <br />
+
+    <div class="wrapper">
+      <!-- Trigger/Open The Modal -->
+      <button onclick="modalFunction()" class="modal-button" href="#daten_modal">
+        Datenschutzerklärung
+      </button>
+      <!-- Trigger/Open The Modal -->
+      <button onclick="modalFunction()" class="modal-button" href="#imp_modal">Impressum</button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="daten_modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span onclick="closeFunction()" class="close" data-target="#daten_modal">&times;</span>
+          <h2>Datenschutzerklärung</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+        <p>Some text in the datenschutz..</p>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="imp_modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span onclick="closeFunction()" class="close" data-target="#imp_modal">&times;</span>
+          <h2>Impressum</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+        <p>Some text in the Impressum..</p>
+      </div>
+    </div>
+
+    <p
+      style="
+        position: absolute;
+        margin-left: 50%;
+        transform: translate(-50%, 0%);
+        padding-top: 70px;
+        font-family: Work Sans, sans-serif;
+      "
+    >
+      Johann Mai Fotografie | 74223 Flein | johannmai@icloud.com
+    </p>
+  </footer>
+</html>

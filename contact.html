@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Home - Johann Mai Fotografie" />
+    <meta property="og:url" content="https://johannmai.de/" />
+    <meta property="og:site_name" content="Johann Mai Fotografie" />
+    <title>Johann Mai Fotografie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bellota Text|Work Sans|Urbanist|Alex Brush"
+      rel="stylesheet"
+    />
+    <script src="myscripts.js"></script>
+    <style>
+      body {
+        background-color: #fef9e7;
+      }
+      footer {
+        background-color: rgba(134, 134, 134, 0.2);
+      }
+      .topnav a,
+      .language a {
+        color: black;
+      }
+      .contact-title {
+        font-family: Bellota Text;
+        font-size: 28px;
+      }
+      .other-contact {
+        font-family: Bellota Text;
+        font-size: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="topnav">
+        <nav>
+          <a
+            href="http://127.0.0.1:5500/index.html"
+            style="display: inline-block; margin-right: 20px"
+          >
+            <h3>Home</h3></a
+          >
+          <a
+            href="about_me.html"
+            style="display: inline-block; margin-right: 20px"
+            ><h3>About us</h3></a
+          >
+          <a
+            href="contact.html"
+            style="display: inline-block; margin-right: 20px"
+            ><h3>Contact</h3></a
+          >
+          <a
+            href="portfolio.html"
+            style="display: inline-block; margin-right: 20px"
+            ><h3>Portfolio</h3></a
+          >
+        </nav>
+      </div>
+      <div class="language">
+        <a
+          href="http://127.0.0.1:5500/index.html"
+          style="display: inline-block"
+        >
+          <h3>EN</h3></a
+        >
+
+        <a
+          href="http://127.0.0.1:5500/index.html"
+          style="display: inline-block; margin-right: 7px"
+        >
+          <h3>DE</h3></a
+        >
+      </div>
+    </header>
+
+    <div style="display: flex; flex-wrap: wrap; margin-top: 80px">
+      <div style="flex: 45%">
+        <img
+          src="images/German-Maria/DSC07320.jpg"
+          alt=""
+          style="width: 100%"
+        />
+      </div>
+      <div style="flex: 45%">
+        <p
+          style="
+            font-size: 60px;
+            font-family: Garamond, serif;
+            text-align: center;
+          "
+        >
+          Tell me your story
+        </p>
+        <div class="contact-form">
+          <form action="action_page.php">
+            <label for="fname" class="contact-title">First name</label>
+            <input type="text" name="fisrtname" id="fname" />
+
+            <label for="lname" class="contact-title">Last name</label>
+            <input type="text" name="lastname" id="lname" />
+
+            <label for="email" class="contact-title">E-mail</label>
+            <input type="text" name="e_mail" id="email" />
+
+            <label for="loc" class="contact-title">Location</label>
+            <input type="text" name="location" id="loc" />
+
+            <label for="date" class="contact-title">Date</label>
+
+            <input type="date" name="date" id="date" />
+            <br />
+            <label for="More info" class="contact-title">More info</label>
+            <textarea name="info" id="info" style="height: 200px"></textarea>
+
+            <input
+              type="submit"
+              value="SEND"
+              style="font-size: 20px; font-family: Urbanist"
+            />
+          </form>
+          <p
+            style="
+              font-size: 30px;
+              font-family: Garamond, serif;
+              text-align: center;
+            "
+          >
+            <br />
+            Other contacts:
+          </p>
+          <div class="other-contact">
+            <p>Mail: johannmai@icloud.com</p>
+            <p>Phone: +49 151 224 668 36</p>
+            <p>
+              Facebook:
+              <a href="https://www.facebook.com/Johannmai" target="blank_"
+                >Johann Mai</a
+              >
+            </p>
+            <p>
+              Instagram:
+              <a
+                href="https://www.instagram.com/johann_mai_de/"
+                target="_blank"
+              >
+                @johann_mai_de</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div
+      style="
+        position: absolute;
+        margin-left: 50%;
+        transform: translate(-50%, 0%);
+        border-bottom: 10px;
+      "
+    >
+      <button onclick="topFunction()" id="top-btn" title="Go to top">
+        Back to top
+      </button>
+    </div>
+
+    <br />
+
+    <div class="wrapper">
+      <!-- Trigger/Open The Modal -->
+      <button
+        onclick="modalFunction()"
+        class="modal-button"
+        href="#daten_modal"
+      >
+        Datenschutzerklärung
+      </button>
+      <!-- Trigger/Open The Modal -->
+      <button onclick="modalFunction()" class="modal-button" href="#imp_modal">
+        Impressum
+      </button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="daten_modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span
+            onclick="closeFunction()"
+            class="close"
+            data-target="#daten_modal"
+            >&times;</span
+          >
+          <h2>Datenschutzerklärung</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+        <p>Some text in the datenschutz..</p>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="imp_modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span onclick="closeFunction()" class="close" data-target="#imp_modal"
+            >&times;</span
+          >
+          <h2>Impressum</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+        <p>Some text in the Impressum..</p>
+      </div>
+    </div>
+
+    <p
+      style="
+        position: absolute;
+        margin-left: 50%;
+        transform: translate(-50%, 0%);
+        padding-top: 70px;
+        font-family: Work Sans, sans-serif;
+      "
+    >
+      Johann Mai Fotografie | 74223 Flein | johannmai@icloud.com
+    </p>
+  </footer>
+</html>

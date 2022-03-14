@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en,de" ;>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Home - Johann Mai Fotografie" />
+    <meta property="og:url" content="https://johannmai.de/" />
+    <meta property="og:site_name" content="Johann Mai Fotografie" />
+    <title>HOME | Johann Mai Fotografie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bellota Text|Work Sans|Urbanist|Alex Brush"
+      rel="stylesheet"
+    />
+    <script src="myscripts.js"></script>
+    <style>
+      body {
+        background-image: url("images/ring.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: rgb(49, 49, 49);
+      }
+      header {
+        padding-bottom: 57%;
+      }
+      .bigname {
+        color: white;
+        position: absolute;
+        text-align: center;
+        margin: none;
+        top: 50%;
+        left: 26%;
+        transform: translate(-50%, -50%);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .side {
+        flex: 27%; /* Set the width of the sidebar */
+        background-color: none;
+        padding-right: 100px; /* Some padding */
+        margin-left: 25%;
+      }
+      .main {
+        flex: 23%; /* Set the width of the main content */
+        background-color: none; /* White background color */
+        padding: none; /* Some padding */
+        margin-right: 25%;
+      }
+      .image {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      #portfolio-btn {
+        position: relative;
+        background-color: inherit;
+        border: solid black;
+        margin-top: 10px;
+        padding: 14px 20px;
+        font-size: 22px;
+        cursor: pointer;
+        color: white;
+        font-family: Bellota Text;
+        left: 50%;
+        transform: translate(-50%);
+        transition: background-color 0.5s ease;
+        z-index: 6;
+      }
+      #portfolio-btn:hover {
+        background: lightgrey;
+        color: black;
+      }
+      #sidenav {
+        background-color: rgba(134, 134, 134, 0.2);
+        position: fixed; /* Make it stick/fixed */
+        left: 0;
+        top: 0;
+        height: 100%;
+        transition: 0.6s;
+        align-items: center;
+        text-align: center;
+      }
+
+      #sidenav a {
+        float: left;
+        display: block;
+        color: white;
+        padding: 15px;
+        text-decoration: none;
+        transition: 0.5s;
+        font-size: 20px;
+        font-family: Bellota Text;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      #sidenav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      footer {
+        margin-top: 20px;
+      }
+      #top-btn {
+        color: white;
+      }
+      .modal-button {
+        color: white;
+      }
+      #kontact {
+        position: relative;
+        height: 250px;
+        text-align: center;
+        color: white;
+        left: 0;
+      }
+      #contact-btn {
+        position: relative;
+        background-color: inherit;
+        border: solid black;
+        margin-top: 10px;
+        padding: 14px 20px;
+        font-size: 22px;
+        cursor: pointer;
+        color: white;
+        font-family: Bellota Text;
+        transition: background-color 0.5s ease;
+        z-index: 6;
+      }
+      #contact-btn:hover {
+        background: lightgrey;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="topnav">
+        <nav>
+          <a
+            href="http://127.0.0.1:5500/index.html"
+            style="display: inline-block; margin-right: 20px"
+          >
+            <h3>Home</h3></a
+          >
+          <a
+            href="about_me.html"
+            style="display: inline-block; margin-right: 20px"
+            ><h3>About us</h3></a
+          >
+          <a
+            href="contact.html"
+            style="display: inline-block; margin-right: 20px"
+            ><h3>Contact</h3></a
+          >
+          <a
+            href="portfolio.html"
+            style="display: inline-block; margin-right: 20px"
+            ><h3>Portfolio</h3></a
+          >
+        </nav>
+      </div>
+
+      <div class="language">
+        <a
+          href="http://127.0.0.1:5500/index.html"
+          style="display: inline-block"
+        >
+          <h3>EN</h3></a
+        >
+        <!--<span style="color: lemonchiffon; display: inline-block">&#124;</span>-->
+        <a
+          href="http://127.0.0.1:5500/index.html"
+          style="display: inline-block; margin-right: 7px"
+        >
+          <h3>DE</h3></a
+        >
+      </div>
+
+      <div class="bigname">
+        <p
+          style="
+            font-size: 60px;
+            font-family: Georgia, sans-serif;
+            margin: 10px;
+          "
+        >
+          Johann Mai
+        </p>
+        <p style="font-size: 20px; font-family: Bellota Text, sans-serif">
+          PHOTOGRAPHY
+        </p>
+      </div>
+    </header>
+    <main>
+      <article></article>
+      <section id="about-johann">
+        <p
+          style="
+            text-align: center;
+            color: white;
+            margin: 60px;
+            font-family: Courier New, monospace;
+            font-size: 40px;
+          "
+        >
+          A traveller, a nature lover, <br />
+          and a photographer
+        </p>
+        <div class="row">
+          <div class="side">
+            <img src="images/Johann/johann.jpg" alt="Johann" width="100%" />
+          </div>
+          <div class="main">
+            <!--<h1 style="padding: 0px 30px; font-size: 40px">
+                A traveller, a nature lover, <br />
+                a photographer
+              </h1>-->
+            <div
+              style="
+                padding-left: 30px;
+                font-family: Urbanist, sans-serif;
+                color: white;
+                font-size: 22px;
+              "
+            >
+              <p>
+                So far - life is a journey. It goes up and down, with falling
+                and rising again.
+              </p>
+              <p>
+                Being 40 years old and working for 15 years as an engineer in a
+                big German company developing technical products, I finally
+                found something, what I was always searching for. It is freedom
+                and endless opportunities in creating pictures of things I see
+                on our beautiful planet.
+              </p>
+              <p>
+                I respect engeneering - my problems are the limititations given
+                by physical principles and other boundaries. But photography has
+                been the eye opener. The are no limitations for moments. It is
+                on us to appriciate this and capture them.
+              </p>
+              <p></p>
+              <!--<p>And now I am a husband of a cute little baby chicken.</p>-->
+            </div>
+            <button id="aboutme-btn" onclick="location.href='about_me.html'">
+              More about me
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <hr style="width: 60%; margin-top: 50px; margin-bottom: 50px" />
+      <section id="images">
+        <h1 style="text-align: center; color: white">Portfolio</h1>
+        <div class="row">
+          <div
+            style="
+              width: 25%;
+              margin-left: 9%;
+              margin-right: 20px;
+              overflow: hidden;
+            "
+          >
+            <section id="wedding-section">
+              <img
+                class="image"
+                src="images/German-Maria/DSC06301.jpg"
+                alt=""
+                style="width: 100%"
+              />
+              <img
+                class="image"
+                src="images/meike-alex/DSC02872.jpg"
+                alt=""
+                style="width: 100%"
+              />
+              <img
+                class="image"
+                src="images/us-paris/DSC01939.jpg"
+                alt=""
+                style="width: 100%"
+              />
+            </section>
+            <section id="portrait-section">
+              <img
+                class="image"
+                src="images/portrait/_DSC3194.jpg"
+                alt=""
+                style="width: 140%; margin-left: -120px"
+              />
+              <img
+                class="image"
+                src="images/portrait/DSC01444.jpg"
+                alt=""
+                style="width: 140%; margin-left: -170px"
+              />
+            </section>
+          </div>
+
+          <div style="width: 25%; margin-left: 25px; margin-right: 25px">
+            <img
+              class="image"
+              src="images/German-Maria/DSC06251.jpg"
+              alt=""
+              style="width: 100%"
+            />
+            <img
+              class="image"
+              src="images/German-Maria/DSC06311.jpg"
+              alt=""
+              style="width: 100%"
+            />
+            <img
+              class="image"
+              src="images/meike-alex/DSC02946.jpg"
+              alt=""
+              style="width: 100%"
+            />
+            <img
+              class="image"
+              src="images/us-paris/DSC02145.jpg"
+              alt=""
+              style="width: 100%"
+            />
+            <img
+              class="image"
+              src="images/portrait/DSC00525.jpg"
+              alt=""
+              style="width: 100%"
+            />
+          </div>
+
+          <div style="width: 25%; margin-right: 9%; margin-left: 20px">
+            <img
+              class="image"
+              src="images/German-Maria/DSC07755.jpg"
+              alt=""
+              style="width: 100%"
+            />
+            <img
+              class="image"
+              src="images/meike-alex/DSC03149.jpg"
+              alt=""
+              style="width: 100%"
+            />
+            <img
+              class="image"
+              src="images/us-paris/img2.jpg"
+              alt=""
+              style="width: 100%"
+            />
+            <img
+              class="image"
+              src="images/portrait/DSC05388.jpg"
+              alt=""
+              style="width: 100%"
+            />
+            <img
+              class="image"
+              src="images/portrait/DSC02588.jpg"
+              alt=""
+              style="width: 100%"
+            />
+          </div>
+        </div>
+
+        <button id="portfolio-btn" onclick="location.href='portfolio.html'">
+          To portfolio
+        </button>
+      </section>
+      <hr style="width: 60%; margin-top: 80px; margin-bottom: 80px" />
+      <section id="kontact">
+        <p style="font-size: 35px; font-family: Bellota Text">
+          Are you interested in our work?
+          <br />
+          We are waiting for your message.
+        </p>
+        <button id="contact-btn" onclick="location.href='contact.html'">
+          Contact us
+        </button>
+      </section>
+      <!--
+          <div class="slideshow_container">
+            <div class="mySlides fade">
+              <img src="images/DSC03491.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="images/img2.jpg" style="width: 49%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="images/img3.jpg" style="width: 100%" />
+            </div>
+
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides((slideIndex += n));
+            }
+
+            function currentSlide(n) {
+              showSlides((slideIndex = n));
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = slides.length;
+              }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+            }
+          </script>
+          -->
+    </main>
+
+    <footer>
+      <div
+        style="
+          position: absolute;
+          margin-left: 50%;
+          transform: translate(-50%, 0%);
+        "
+      >
+        <button onclick="topFunction()" id="top-btn" title="Go to top">
+          Back to top
+        </button>
+      </div>
+
+      <br />
+
+      <div class="wrapper">
+        <!-- Trigger/Open The Modal -->
+        <button
+          onclick="modalFunction()"
+          class="modal-button"
+          href="#daten_modal"
+        >
+          Datenschutzerklärung
+        </button>
+        <!-- Trigger/Open The Modal -->
+        <button
+          onclick="modalFunction()"
+          class="modal-button"
+          href="#imp_modal"
+        >
+          Impressum
+        </button>
+      </div>
+
+      <!-- The Modal -->
+      <div id="daten_modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span
+              onclick="closeFunction()"
+              class="close"
+              data-target="#daten_modal"
+              >&times;</span
+            >
+            <h2>Datenschutzerklärung</h2>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+          </div>
+          <div class="modal-footer">
+            <h3>Modal Footer</h3>
+          </div>
+          <p>Some text in the datenschutz..</p>
+        </div>
+      </div>
+      <!-- The Modal -->
+      <div id="imp_modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span
+              onclick="closeFunction()"
+              class="close"
+              data-target="#imp_modal"
+              >&times;</span
+            >
+            <h2>Impressum</h2>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+          </div>
+          <div class="modal-footer">
+            <h3>Modal Footer</h3>
+          </div>
+          <p>Some text in the Impressum..</p>
+        </div>
+      </div>
+
+      <p
+        style="
+          position: absolute;
+          margin-left: 50%;
+          transform: translate(-50%, 0%);
+          padding-top: 70px;
+          font-family: Work Sans, sans-serif;
+          color: white;
+        "
+      >
+        Johann Mai Fotografie | 74223 Flein | johannmai@icloud.com
+      </p>
+    </footer>
+  </body>
+</html>
