@@ -14,14 +14,9 @@
       rel="stylesheet"
     />
     <script src="myscripts.js"></script>
+    <script src="./header_footer.js"></script>
+
     <style>
-      body {
-        background-color: #fef9e7;
-      }
-      .topnav a,
-      .language a {
-        color: black;
-      }
       .container{
         width: 450px;
         height: 450px;
@@ -57,12 +52,10 @@
 
   <body>
     <header-component></header-component>
-    <br />
-      <p style="margin: 0px; margin-top: 100px; text-align: center;font-family: Amiri; font-size: 60px; color: black;">PORTFOLIO</p>
+    <p style="margin: 0px; margin-top: 40px; text-align: center;font-family: Amiri; font-size: 60px; color: black;">PORTFOLIO</p>
 
     </div>
     <section class="portfolios" style="width: 100%; text-align: center;">
-      
       <div class="container">
         <a href="" >Wedding</a>
         <img
@@ -91,81 +84,6 @@
         />
       </div>
     </section>
-    <script src="./header_footer.js"></script>
-
+    <footer-component></footer-component>
   </body>
-  <footer>
-    <div
-      style="
-        position: absolute;
-        margin-left: 50%;
-        transform: translate(-50%, 0%);
-        border-bottom: 10px;
-      "
-    >
-      <button onclick="topFunction()" id="top-btn" title="Go to top">
-        Back to top
-      </button>
-    </div>
-
-    <br />
-
-    <div class="wrapper">
-      <!-- Trigger/Open The Modal -->
-      <button onclick="modalFunction()" class="modal-button" href="#daten_modal">
-        Datenschutzerklärung
-      </button>
-      <!-- Trigger/Open The Modal -->
-      <button onclick="modalFunction()" class="modal-button" href="#imp_modal">Impressum</button>
-    </div>
-
-    <!-- The Modal -->
-    <div id="daten_modal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span onclick="closeFunction()" class="close" data-target="#daten_modal">&times;</span>
-          <h2>Datenschutzerklärung</h2>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the Modal Body</p>
-          <p>Some other text...</p>
-        </div>
-        <div class="modal-footer">
-          <h3>Modal Footer</h3>
-        </div>
-        <p>Some text in the datenschutz..</p>
-      </div>
-    </div>
-    <!-- The Modal -->
-    <div id="imp_modal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span onclick="closeFunction()" class="close" data-target="#imp_modal">&times;</span>
-          <h2>Impressum</h2>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the Modal Body</p>
-          <p>Some other text...</p>
-        </div>
-        <div class="modal-footer">
-          <h3>Modal Footer</h3>
-        </div>
-        <p>Some text in the Impressum..</p>
-      </div>
-    </div>
-
-    <p
-      style="
-        position: absolute;
-        margin-left: 50%;
-        transform: translate(-50%, 0%);
-        padding-top: 70px;
-        font-family: Work Sans, sans-serif;
-      "
-    >
-      Johann Mai Fotografie | 74223 Flein | johannmai@icloud.com
-    </p>
-  </footer>
 </html>
