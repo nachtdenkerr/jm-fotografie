@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <script src="myscripts.js"></script>
+    <script src="header_footer.js" type="text/javascript" defer></script>
     <style>
       body {
         background-color: #fef9e7;
@@ -36,44 +37,9 @@
       }
     </style>
   </head>
-
   <body>
-    <header>
-      <div class="topnav">
-        <nav>
-          <a
-            href="/index.html"
-            style="display: inline-block; margin-right: 20px"
-          >
-            <h3>Home</h3></a
-          >
-          <a
-            href="about_me.html"
-            style="display: inline-block; margin-right: 20px"
-            ><h3>About us</h3></a
-          >
-          <a
-            href="contact.html"
-            style="display: inline-block; margin-right: 20px"
-            ><h3>Contact</h3></a
-          >
-          <a
-            href="portfolio.html"
-            style="display: inline-block; margin-right: 20px"
-            ><h3>Portfolio</h3></a
-          >
-        </nav>
-      </div>
-      <div class="language">
-        <a href="index.html" style="display: inline-block"> <h3>EN</h3></a>
-
-        <a href="index.html" style="display: inline-block; margin-right: 7px">
-          <h3>DE</h3></a
-        >
-      </div>
-    </header>
-
-    <div style="display: flex; flex-wrap: wrap; margin-top: 80px">
+    <header-component></header-component>
+      <div style="display: flex; flex-wrap: wrap; margin-top: 80px">
       <div style="flex: 45%">
         <img
           src="images/German-Maria/DSC07320.jpg"
@@ -150,8 +116,10 @@
         </div>
       </div>
     </div>
+    <footer-component></footer-component>
+    <script src="header_footer.js"></script>
   </body>
-  <footer>
+  <!--<footer>
     <div
       style="
         position: absolute;
@@ -237,5 +205,5 @@
     >
       Johann Mai Fotografie | 74223 Flein | johannmai@icloud.com
     </p>
-  </footer>
+  </footer>-->
 </html>

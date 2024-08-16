@@ -1,5 +1,14 @@
 html {
   scroll-behavior: smooth;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+main {
+  flex: 1 0 auto;
 }
 .topnav {
   position: absolute;
@@ -21,6 +30,7 @@ html {
 .language a:hover {
   background-color: rgba(114, 114, 114, 0.4);
 }
+
 .topnav a,
 .language a {
   float: left;
@@ -31,16 +41,12 @@ html {
   text-decoration: none;
   font-size: 17px;
 }
-a:link {
-  text-decoration: none;
-}
+
+a:link,
 a:visited {
   text-decoration: none;
 }
-body {
-  margin: 0;
-  padding: 0;
-}
+
 .row {
   display: flex;
   flex-wrap: wrap;
