@@ -15,15 +15,18 @@
       rel="stylesheet"
     />
     <script src="myscripts.js"></script>
+    <script src="./header_footer.js"></script>
+
     <style>
-      body {
+      .bigname-container {
         background-image: url("images/ring.jpg");
-        background-size: 100%;
+        min-height: 380px;
+        height: 100vh;
+        background-position: center;
         background-repeat: no-repeat;
-        background-color: #fef9e7;
-      }
-      header {
-        padding-bottom: 57%;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
       }
       .bigname {
         color: white;
@@ -72,35 +75,6 @@
         background: lightgrey;
         color: black;
       }
-      #sidenav {
-        background-color: rgba(134, 134, 134, 0.2);
-        position: fixed; /* Make it stick/fixed */
-        left: 0;
-        top: 0;
-        height: 100%;
-        transition: 0.6s;
-        align-items: center;
-        text-align: center;
-      }
-
-      #sidenav a {
-        float: left;
-        display: block;
-        color: black;
-        padding: 15px;
-        text-decoration: none;
-        transition: 0.5s;
-        font-size: 20px;
-        font-family: Bellota Text;
-        position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-
-      #sidenav a:hover {
-        background-color: #ddd;
-        color: black;
-      }
       footer {
         margin-top: 20px;
       }
@@ -136,60 +110,34 @@
       }
     </style>
   </head>
-
   <body>
     <header>
-      <div class="topnav">
-        <nav>
-          <a
-            href="index.html"
-            style="display: inline-block; margin-right: 20px"
-          >
-            <h3>Home</h3></a
-          >
-          <a
-            href="about_me.html"
-            style="display: inline-block; margin-right: 20px"
-            ><h3>About us</h3></a
-          >
-          <a
-            href="contact.html"
-            style="display: inline-block; margin-right: 20px"
-            ><h3>Contact</h3></a
-          >
-          <a
-            href="portfolio.html"
-            style="display: inline-block; margin-right: 20px"
-            ><h3>Portfolio</h3></a
-          >
-        </nav>
-      </div>
-
-      <div class="language">
+      <!--<div class="language">
         <a href="index.html" style="display: inline-block"> <h3>EN</h3></a>
-        <!--<span style="color: lemonchiffon; display: inline-block">&#124;</span>-->
+        <span style="color: lemonchiffon; display: inline-block">&#124;</span>
         <a href="index.html" style="display: inline-block; margin-right: 7px">
           <h3>DE</h3></a
         >
-      </div>
-
-      <div class="bigname">
-        <p
-          style="
-            font-size: 60px;
-            font-family: Georgia, sans-serif;
-            margin: 10px;
-          "
-        >
-          Johann Mai
-        </p>
-        <p style="font-size: 20px; font-family: Bellota Text, sans-serif">
-          PHOTOGRAPHY
-        </p>
+      </div>-->
+      <div class="bigname-container">
+        <header-component-index></header-component-index>
+        <div class="bigname">
+          <p
+            style="
+              font-size: 60px;
+              font-family: Georgia, sans-serif;
+              margin: 10px;
+            "
+          >
+            Johann Mai
+          </p>
+          <p style="font-size: 20px; font-family: Bellota Text, sans-serif">
+            PHOTOGRAPHY
+          </p>
+        </div>
       </div>
     </header>
     <main>
-      <article></article>
       <section id="about-johann">
         <p
           style="
@@ -208,10 +156,6 @@
             <img src="images/Johann/johann.jpg" alt="Johann" width="100%" />
           </div>
           <div class="main">
-            <!--<h1 style="padding: 0px 30px; font-size: 40px">
-                A traveller, a nature lover, <br />
-                a photographer
-              </h1>-->
             <div
               style="
                 padding-left: 30px;
@@ -229,8 +173,6 @@
               <p>
                 The endless opportunities to capture unforgettable moments, to make people happy with the results and having fun in this process is the reason I can say I found my purpose in photography.
               </p>
-              <p></p>
-              <!--<p>And now I am a husband of a cute little baby chicken.</p>-->
             </div>
             <button id="aboutme-btn" onclick="location.href='about_me.html'">
               More about me
@@ -370,100 +312,6 @@
         </button>
       </section>
     </main>
-
-    <footer>
-      <div
-        style="
-          position: absolute;
-          margin-left: 50%;
-          transform: translate(-50%, 0%);
-        "
-      >
-        <button onclick="topFunction()" id="top-btn" title="Go to top">
-          Back to top
-        </button>
-      </div>
-
-      <br />
-
-      <div class="wrapper">
-        <!-- Trigger/Open The Modal -->
-        <button
-          onclick="modalFunction()"
-          class="modal-button"
-          href="#daten_modal"
-        >
-          Datenschutzerklärung
-        </button>
-        <!-- Trigger/Open The Modal -->
-        <button
-          onclick="modalFunction()"
-          class="modal-button"
-          href="#imp_modal"
-        >
-          Impressum
-        </button>
-      </div>
-
-      <!-- The Modal -->
-      <div id="daten_modal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <div class="modal-header">
-            <span
-              onclick="closeFunction()"
-              class="close"
-              data-target="#daten_modal"
-              >&times;</span
-            >
-            <h2>Datenschutzerklärung</h2>
-          </div>
-          <div class="modal-body">
-            <p>Some text in the Modal Body</p>
-            <p>Some other text...</p>
-          </div>
-          <div class="modal-footer">
-            <h3>Modal Footer</h3>
-          </div>
-          <p>Some text in the datenschutz..</p>
-        </div>
-      </div>
-      <!-- The Modal -->
-      <div id="imp_modal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <div class="modal-header">
-            <span
-              onclick="closeFunction()"
-              class="close"
-              data-target="#imp_modal"
-              >&times;</span
-            >
-            <h2>Impressum</h2>
-          </div>
-          <div class="modal-body">
-            <p>Some text in the Modal Body</p>
-            <p>Some other text...</p>
-          </div>
-          <div class="modal-footer">
-            <h3>Modal Footer</h3>
-          </div>
-          <p>Some text in the Impressum..</p>
-        </div>
-      </div>
-
-      <p
-        style="
-          position: absolute;
-          margin-left: 50%;
-          transform: translate(-50%, 0%);
-          padding-top: 70px;
-          font-family: Work Sans, sans-serif;
-          color: black;
-        "
-      >
-        Johann Mai Fotografie | 74223 Flein | johannmai@icloud.com
-      </p>
-    </footer>
+    <footer-component></footer-component>
   </body>
 </html>
