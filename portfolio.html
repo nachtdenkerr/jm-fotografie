@@ -19,33 +19,37 @@
 
     <style>
       .container{
-        width: 450px;
-        height: 450px;
-        margin: 30px;
-        display: inline-block;
+        width: 100%;
+        position: relative;
         overflow: hidden;
-        align-items: center;
+        padding: 10px;
         font-family: Urbanist;
-        overflow: hidden;
       }
       .container .image{
         transition: 0.6s ease;
+        display: block;
+        width: 100%;
+        z-index: 1;
       }
       .container:hover .image{
         opacity: 0.4;
       }
-      .container a {
-        text-align: center;
-        font-size: 35px;
-        color: white;
-        position: relative;
+      .container .overlay{
+        position: absolute;
         z-index: 2;
         top: 50%;
-        transform: translate(-50%);
+        left: 50%;
+        transform: translate(-50%, -50%);
         opacity: 0;
         transition: 0.6s ease;
       }
-      .container:hover a {
+      .container .overlay a{
+        font-family: Garamond, serif;
+        text-align: center;
+        font-size: 35px;
+        color: Black;
+      }
+      .container:hover .overlay {
         opacity: 1;
       }
     </style>
@@ -56,33 +60,45 @@
     <p style="margin: 0px; margin-top: 40px; text-align: center;font-family: Amiri; font-size: 60px; color: black;">PORTFOLIO</p>
 
     </div>
-    <section class="portfolios" style="width: 100%; text-align: center;">
-      <div class="container">
-        <a href="" >Wedding</a>
-        <img
-          class="image"
-          src="images/German-Maria/DSC06614.jpg"
-          alt=""
-          style="object-fit: cover; height: 100%; margin-left: -200px; z-index: 1;"
-          />
-      </div>
-        
-      <div class="container" >
-        <a href="" >Portrait </a>
-        <img
-          class="image"
-          src="images/portrait/DSC8532.jpg"
-          alt=""
-          style="object-fit: cover; height: 100%; margin-left: -200px; z-index: 1"/>
-      </div>
-      <div class="container" >
-        <a href="">Kids </a>
-        <img
-          class="image"
-          src="images/kids/DSC08196.jpg"
-          alt=""
-          style="object-fit: cover; height: 100%; margin-left: -280px; z-index: 1"
-        />
+    <section class="portfolios" style="width: 80%; display: block;
+    margin-left: auto;
+    margin-right: auto;">
+      <div class="row">
+        <div class="column">
+          <div class="container">
+            <div class="overlay">
+              <a href="wedding.html">Wedding</a>
+            </div>
+            <img
+              class="image"
+              src="images/German-Maria/portfolio_1.jpg"
+              alt=""
+              />
+          </div>
+        </div>
+        <div class="column">
+          <div class="container">
+            <div class="overlay">
+              <a href="portrait.html">
+                Portrait</a>
+            </div>
+            <img
+              class="image"
+              src="images/portrait/portfolio_2.jpg"
+              alt=""/>
+          </div>
+        </div>
+        <div class="column">
+          <div class="container">
+            <div class="overlay">
+              <a href="kids.html">Kids</a>
+            </div>
+            <img
+              class="image"
+              src="images/kids/portfolio_3.jpg"
+              alt=""/>
+          </div>
+        </div>
       </div>
     </section>
     <footer-component></footer-component>
