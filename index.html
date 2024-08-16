@@ -50,20 +50,9 @@
         width: 50vw;
       }
       .column {
-        float: left;
-        width: 33.33%;
         padding: 10px 10px 0px 10px;
       }
-
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
       @media screen and (max-width: 600px) {
-        .column,
         .about-column-left,
         .about-column-right {
           width: 100%;
@@ -152,18 +141,18 @@
     </header>
     <main>
       <section id="about-johann">
-        <p
+        <h1
           style="
             text-align: center;
             color: black;
             margin: 60px;
-            font-family: Courier New, monospace;
+            font-family: Garamond, sans-serif;
             font-size: 40px;
           "
         >
           A traveller, a nature lover, <br />
           and a photographer
-        </p>
+      </h1>
         <div class="row">
           <div class="about-column-left">
             <img src="images/Johann/johann.jpg" alt="Johann" width="100%" />
@@ -222,7 +211,7 @@
             <section id="portrait-section">
               <img
                 class="image"
-                src="images/portrait/_DSC3194.jpg"
+                src="images/portrait/DSC3194.jpg"
                 alt=""
                 style="width: 100%"
               />
