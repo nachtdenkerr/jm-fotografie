@@ -37,23 +37,39 @@
         left: 26%;
         transform: translate(-50%, -50%);
       }
-      * {
-        box-sizing: border-box;
+      .about-column-left {
+        float: left;
+        align-items: center;
+        width: 50vw;
+        padding-left: 20vw;
       }
-      .side {
-        flex: 27%; /* Set the width of the sidebar */
-        background-color: none;
-        padding-right: 100px; /* Some padding */
-        margin-left: 25%;
+      .about-column-right {
+        float: left;
+        text-align: left;
+        padding-right: 20vw;
+        width: 50vw;
       }
-      .main {
-        flex: 23%; /* Set the width of the main content */
-        background-color: none; /* White background color */
-        padding: none; /* Some padding */
-        margin-right: 25%;
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px 10px 0px 10px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @media screen and (max-width: 600px) {
+        .column,
+        .about-column-left,
+        .about-column-right {
+          width: 100%;
+        }
       }
       .image {
-        margin-top: 20px;
         margin-bottom: 20px;
       }
       #portfolio-btn {
@@ -149,10 +165,10 @@
           and a photographer
         </p>
         <div class="row">
-          <div class="side">
+          <div class="about-column-left">
             <img src="images/Johann/johann.jpg" alt="Johann" width="100%" />
           </div>
-          <div class="main">
+          <div class="about-column-right">
             <div
               style="
                 padding-left: 30px;
@@ -181,15 +197,8 @@
       <hr style="width: 60%; margin-top: 50px; margin-bottom: 50px" />
       <section id="images">
         <h1 style="text-align: center; color: black">Portfolio</h1>
-        <div class="row">
-          <div
-            style="
-              width: 25%;
-              margin-left: 9%;
-              margin-right: 20px;
-              overflow: hidden;
-            "
-          >
+        <div class="row" style="padding: 10px">
+          <div class="column">
             <section id="wedding-section">
               <img
                 class="image"
@@ -215,18 +224,18 @@
                 class="image"
                 src="images/portrait/_DSC3194.jpg"
                 alt=""
-                style="width: 140%; margin-left: -120px"
+                style="width: 100%"
               />
               <img
                 class="image"
                 src="images/portrait/DSC01444.jpg"
                 alt=""
-                style="width: 140%; margin-left: -170px"
+                style="width: 100%"
               />
             </section>
           </div>
 
-          <div style="width: 25%; margin-left: 25px; margin-right: 25px">
+          <div class="column">
             <img
               class="image"
               src="images/German-Maria/DSC06251.jpg"
@@ -259,7 +268,7 @@
             />
           </div>
 
-          <div style="width: 25%; margin-right: 9%; margin-left: 20px">
+          <div class="column">
             <img
               class="image"
               src="images/German-Maria/DSC07755.jpg"
