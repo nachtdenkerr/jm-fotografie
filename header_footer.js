@@ -6,10 +6,10 @@ class Header extends HTMLElement {
     this.innerHTML = `
       <style>
         nav {
-          height: 50px;
+          height: 70px;
           display: flex;
           align-items: center;
-          justify-content: left;
+          justify-content: space-around;
           background-color: rgba(134, 134, 134, 0.2);
           overflow: hidden;
         }
@@ -24,16 +24,16 @@ class Header extends HTMLElement {
         }
 
         a:hover {
-          background-color: rgba(114, 114, 114, 0.4);
+          color: #606060;
           transition: 0.6s ease;
         }
       </style>
       <header>
         <nav>
-          <a href="index.html">Home</a>
-          <a href="about_me.html" >About us</a>
-          <a href="contact.html">Contact</a>
-          <a href="portfolio.html" >Portfolio</a>
+          <a href="index.html">HOME</a>
+          <a href="about_me.html" >ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="portfolio.html" >PORTFOLIO</a>
         </nav>
       </header>
     `;
@@ -49,34 +49,33 @@ class HeaderIndex extends HTMLElement {
     this.innerHTML = `
       <style>
         nav {
-          height: 50px;
+          height: 70px;
           display: flex;
           align-items: center;
-          justify-content: left;
-          background-color: rgba(134, 134, 134, 0.2);
+          justify-content: space-around;
+          background-color: rgba(134, 134, 134, 0.4);
           overflow: hidden;
         }
 
         a {
           font-size: 17px;
           padding: 15px;
-          margin: 0px;
-          color: white;
+\          color: #FFFFF0;
           text-decoration: none;
           transition: 0.6s ease;
         }
 
         a:hover {
-          background-color: rgba(114, 114, 114, 0.4);
+          color: #E6E3CA;
           transition: 0.6s ease;
         }
       </style>
       <header>
         <nav>
-          <a href="index.html">Home</a>
-          <a href="about_me.html" >About us</a>
-          <a href="contact.html">Contact</a>
-          <a href="portfolio.html" >Portfolio</a>
+          <a href="index.html">HOME</a>
+          <a href="about_me.html" >ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="portfolio.html" >PORTFOLIO</a>
         </nav>
       </header>
     `;
